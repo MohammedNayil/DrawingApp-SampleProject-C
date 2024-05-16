@@ -1,6 +1,6 @@
 ﻿namespace DrawingApp_SampleProject_C
 {
-    partial class AdminMainPage
+    partial class CurrentActiveFlight
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminMainPage));
-            button2 = new Button();
-            comboBox1 = new ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CurrentActiveFlight));
             pictureBox1 = new PictureBox();
-            label1 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // button2
-            // 
-            button2.Location = new Point(241, 358);
-            button2.Name = "button2";
-            button2.Size = new Size(234, 83);
-            button2.TabIndex = 2;
-            button2.Text = "Manage Tickets";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Current active flight", "Percentage of booking", "Confirmed payments", "Waitlisted passengers", "Average load factor", "Ticket cancelled" });
-            comboBox1.Location = new Point(586, 358);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(236, 40);
-            comboBox1.TabIndex = 4;
-            comboBox1.Text = "Generate Rerport";
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // pictureBox1
             // 
@@ -65,41 +42,35 @@
             pictureBox1.Size = new Size(98, 100);
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
-            // label1
+            // button1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 19.875F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(124, 165);
-            label1.Name = "label1";
-            label1.Size = new Size(841, 71);
-            label1.TabIndex = 7;
-            label1.Text = "Welcom To Airline Booking System";
+            button1.Location = new Point(63, 671);
+            button1.Name = "button1";
+            button1.Size = new Size(150, 46);
+            button1.TabIndex = 7;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            // AdminMainPage
+            // CurrentActiveFlight
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.desktop_wallpaper_white_abstract_backgrounds_group_white_colour;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1070, 790);
-            Controls.Add(label1);
+            Controls.Add(button1);
             Controls.Add(pictureBox1);
-            Controls.Add(comboBox1);
-            Controls.Add(button2);
-            Name = "AdminMainPage";
-            Text = "Admin Main Page";
+            Name = "CurrentActiveFlight";
+            Text = "CurrentActiveFlight";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private Button button2;
-        private ComboBox comboBox1;
         private PictureBox pictureBox1;
-        private Label label1;
+        private Button button1;
     }
 }

@@ -4,6 +4,7 @@ public class Line : Shape
 {
     private int endX;
     private int endY;
+
 	public Line(String name, int x, int y, int EndX, int EndY)
 	{
         this.name = name;

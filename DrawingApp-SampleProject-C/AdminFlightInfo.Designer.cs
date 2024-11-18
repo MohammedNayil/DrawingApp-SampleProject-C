@@ -38,6 +38,7 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            label7 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -45,7 +46,6 @@
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 32;
-            listBox1.Items.AddRange(new object[] { "Ali", "Mohammed", "Omar", "Saif", "Hamed", "Abdullah" });
             listBox1.Location = new Point(553, 122);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(344, 356);
@@ -120,11 +120,21 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(68, 87);
+            label1.Location = new Point(300, 221);
             label1.Name = "label1";
-            label1.Size = new Size(120, 32);
+            label1.Size = new Size(72, 32);
             label1.TabIndex = 31;
-            label1.Text = "Flight 314";
+            label1.Text = "Plane";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(77, 87);
+            label7.Name = "label7";
+            label7.Size = new Size(104, 32);
+            label7.TabIndex = 35;
+            label7.Text = "Flight_id";
+            label7.Click += label7_Click;
             // 
             // AdminFlightInfo
             // 
@@ -133,6 +143,7 @@
             BackgroundImage = Properties.Resources.desktop_wallpaper_white_abstract_backgrounds_group_white_colour;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1070, 790);
+            Controls.Add(label7);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -161,5 +172,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Label label7;
     }
 }

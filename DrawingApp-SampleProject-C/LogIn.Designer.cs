@@ -130,6 +130,7 @@
             Controls.Add(label1);
             Name = "LogIn";
             Text = "Log in";
+            Load += LogIn_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

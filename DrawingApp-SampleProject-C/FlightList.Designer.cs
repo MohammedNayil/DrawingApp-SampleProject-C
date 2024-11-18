@@ -47,19 +47,21 @@
             button1.TabIndex = 0;
             button1.Text = "Search";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // dateTimePicker1
             // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
             dateTimePicker1.Location = new Point(99, 61);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(450, 39);
             dateTimePicker1.TabIndex = 2;
+            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
             // 
             // listBox1
             // 
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 32;
-            listBox1.Items.AddRange(new object[] { "Flight 1 (240 SAR), 1 hour", "Flight 2 (260 SAR), 50 min", "Flight 3 (240 SAR), 50 min" });
             listBox1.Location = new Point(99, 197);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(654, 420);
@@ -89,6 +91,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
+            comboBox1.Items.AddRange(new object[] { "Dammam", "Riyadh" });
             comboBox1.Location = new Point(99, 125);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(242, 40);
@@ -98,6 +101,7 @@
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
+            comboBox2.Items.AddRange(new object[] { "Dammam", "Riyadh" });
             comboBox2.Location = new Point(385, 125);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(242, 40);

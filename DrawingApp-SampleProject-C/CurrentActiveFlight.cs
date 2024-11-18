@@ -30,5 +30,33 @@ namespace DrawingApp_SampleProject_C
             this.Parent.Controls.Add(f1);
             this.Parent.Controls.Remove(this);
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            LogIn f1 = new LogIn();
+            f1.TopLevel = false;
+            f1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            f1.Size = this.Size;
+            f1.BringToFront();
+            f1.Visible = true;
+            this.BackgroundImage = null;
+            this.Controls.Clear();
+            this.Parent.Controls.Add(f1);
+            this.Parent.Controls.Remove(this);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AdminFlightInfo f1 = new AdminFlightInfo();
+            f1.TopLevel = false;
+            f1.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            f1.Size = this.Size;
+            f1.BringToFront();
+            f1.Visible = true;
+            this.BackgroundImage = null;
+            this.Controls.Clear();
+            this.Parent.Controls.Add(f1);
+            this.Parent.Controls.Remove(this);
+        }
     }
 }

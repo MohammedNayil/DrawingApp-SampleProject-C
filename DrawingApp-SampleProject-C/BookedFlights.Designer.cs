@@ -41,7 +41,6 @@
             listBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             listBox1.FormattingEnabled = true;
             listBox1.ItemHeight = 45;
-            listBox1.Items.AddRange(new object[] { "June 1, 2024", "November 15, 2024" });
             listBox1.Location = new Point(52, 189);
             listBox1.Name = "listBox1";
             listBox1.Size = new Size(328, 274);

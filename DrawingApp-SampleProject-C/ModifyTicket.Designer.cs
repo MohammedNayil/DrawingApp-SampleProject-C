@@ -42,13 +42,14 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1A", "1B", "1C", "1D", "1E", "1F" });
+            comboBox2.Items.AddRange(new object[] { "0", "5", "10", "15", "20" });
             comboBox2.Location = new Point(102, 235);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(242, 40);
@@ -116,20 +117,20 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(73, 567);
+            label6.Location = new Point(82, 23);
             label6.Name = "label6";
-            label6.Size = new Size(184, 32);
+            label6.Size = new Size(107, 32);
             label6.TabIndex = 32;
-            label6.Text = "Cancelation Fee";
+            label6.Text = "Ticket_id";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(73, 660);
+            label5.Location = new Point(73, 554);
             label5.Name = "label5";
-            label5.Size = new Size(65, 32);
+            label5.Size = new Size(176, 32);
             label5.TabIndex = 31;
-            label5.Text = "Price";
+            label5.Text = "cancelation fee";
             // 
             // label4
             // 
@@ -167,6 +168,15 @@
             label1.TabIndex = 27;
             label1.Text = "Flight 314";
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(73, 660);
+            label8.Name = "label8";
+            label8.Size = new Size(65, 32);
+            label8.TabIndex = 38;
+            label8.Text = "Price";
+            // 
             // ModifyTicket
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -174,6 +184,7 @@
             BackgroundImage = Properties.Resources.desktop_wallpaper_white_abstract_backgrounds_group_white_colour;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1070, 790);
+            Controls.Add(label8);
             Controls.Add(button3);
             Controls.Add(pictureBox1);
             Controls.Add(comboBox3);
@@ -189,6 +200,7 @@
             Controls.Add(button1);
             Name = "ModifyTicket";
             Text = "Modify Ticket";
+            Load += ModifyTicket_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -208,5 +220,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
+        private Label label8;
     }
 }

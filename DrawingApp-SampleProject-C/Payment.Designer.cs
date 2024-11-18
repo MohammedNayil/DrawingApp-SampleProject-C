@@ -127,6 +127,7 @@
             linkLabel1.TabIndex = 26;
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Save payment information";
+            linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
             // label5
             // 

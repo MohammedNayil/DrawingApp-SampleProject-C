@@ -41,6 +41,7 @@
             comboBox2 = new ComboBox();
             pictureBox1 = new PictureBox();
             button2 = new Button();
+            label8 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -57,11 +58,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(76, 103);
+            label1.Location = new Point(56, 662);
             label1.Name = "label1";
-            label1.Size = new Size(120, 32);
+            label1.Size = new Size(65, 32);
             label1.TabIndex = 1;
-            label1.Text = "Flight 314";
+            label1.Text = "Price";
             // 
             // label2
             // 
@@ -95,20 +96,20 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(56, 662);
+            label5.Location = new Point(56, 562);
             label5.Name = "label5";
-            label5.Size = new Size(65, 32);
+            label5.Size = new Size(176, 32);
             label5.TabIndex = 5;
-            label5.Text = "Price";
+            label5.Text = "cancelation fee";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(56, 569);
+            label6.Location = new Point(67, 481);
             label6.Name = "label6";
-            label6.Size = new Size(184, 32);
+            label6.Size = new Size(104, 32);
             label6.TabIndex = 6;
-            label6.Text = "Cancelation Fee";
+            label6.Text = "Flight_id";
             // 
             // label7
             // 
@@ -122,22 +123,23 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "1A", "1B", "1C", "1D", "1E", "1F", "Wait List" });
             comboBox1.Location = new Point(85, 293);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(242, 40);
             comboBox1.TabIndex = 11;
             comboBox1.Text = "Choose Seat";
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // comboBox2
             // 
             comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "1A", "1B", "1C", "1D", "1E", "1F" });
+            comboBox2.Items.AddRange(new object[] { "0", "5", "10", "15", "20" });
             comboBox2.Location = new Point(85, 233);
             comboBox2.Name = "comboBox2";
             comboBox2.Size = new Size(242, 40);
             comboBox2.TabIndex = 12;
             comboBox2.Text = "Add Weight";
+            comboBox2.SelectedIndexChanged += comboBox2_SelectedIndexChanged;
             // 
             // pictureBox1
             // 
@@ -158,6 +160,15 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(85, 103);
+            label8.Name = "label8";
+            label8.Size = new Size(72, 32);
+            label8.TabIndex = 15;
+            label8.Text = "Plane";
+            // 
             // PassengerFlightInfo
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
@@ -165,6 +176,7 @@
             BackgroundImage = Properties.Resources.desktop_wallpaper_white_abstract_backgrounds_group_white_colour;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1070, 790);
+            Controls.Add(label8);
             Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(comboBox2);
@@ -199,5 +211,6 @@
         private ComboBox comboBox2;
         private PictureBox pictureBox1;
         private Button button2;
+        private Label label8;
     }
 }

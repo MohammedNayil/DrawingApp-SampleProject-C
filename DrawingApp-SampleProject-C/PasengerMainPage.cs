@@ -29,6 +29,8 @@ namespace DrawingApp_SampleProject_C
             this.Controls.Clear();
             this.Parent.Controls.Add(f1);
             this.Parent.Controls.Remove(this);
+
+            f1.reload();
         }
 
         private void Form3_Load(object sender, EventArgs e)
